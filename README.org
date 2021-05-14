@@ -10,7 +10,7 @@ Org mode already supports metadata, which allows for defining *tags*, *draft* st
 
 * Format
 
-Each blog post has its own directory =YY-MM-DD-slug=. The main file will be simply named =slug.org=, where =slug= matches the slug used in the directory name. The =.profile.zsh= file has =mkpost= function to automate that, just give call it with the slug and it will create the directory structure for you.
+Each blog post has its own directory =YY-MM-DD-slug=. The main file will be simply named =slug.org=, where =slug= matches the slug used in the directory name. The =.profile.zsh= file has =mkpost= function to automate that, just call it with the slug and it will create the directory structure for you.
 
 Any optional assets will be in the =assets= subdirectory.
 
