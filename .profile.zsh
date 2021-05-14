@@ -11,3 +11,12 @@ if test $(tmux display-message -p '#I') = "1"; then
 fi
 
 e() { (test "$#" -eq 0) && emacsclient -s $EMACS_SERVER README.org || emacsclient -s $EMACS_SERVER $@ }
+
+mkpost() {
+  test "$#" -eq 1 || (echo "Usage: mkpost hello-world" && return 1)
+  mkdir "posts/$(date +%y-%m-%d)-$1"
+  touch "posts/$(date +%y-%m-%d)-$1/$1.org"
+  echo "posts/$(date +%y-%m-%d)-$1/$1.org"
+}
+
+echo "\n  $(tput setaf 2)Functions: $(tput setaf 7)mkpost$(tput sgr0)."
