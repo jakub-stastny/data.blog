@@ -19,6 +19,10 @@ Any optional assets will be in the =assets= subdirectory.
 The output is a bunch of JSON files, which are easy for the frontend to consume. Wherever formatting is required, the Org mode format is used on the export side as well.
 
 * Tasks
-** TODO Check whether there's a good Org mode parser in either Elm or JS
+** TODO Org mode export plugin
+
+There is already =ox-json=, but it exports a list of nodes. I want to export metadata and content, where the content is in the Org mode format.
+
+** TODO Frontend Org format parser
 
 [[http://mooz.github.io/org-js/#header-3-1-4-3][org-js]] looks promising, I should be able to integrate it using [[https://guide.elm-lang.org/interop/custom_elements.html][custom elements]] on the Elm side. In the worst case I can write my own library using PEG.js. There is no PEG in the Elm landscape as far as I know, so that'd probably be the best option.
