@@ -1,6 +1,6 @@
 * About
 
-My blog posts written in the [[https://orgmode.org][Org mode]].
+My blog posts written in the [[https://orgmode.org][Org mode]] format. I export them using [[https://github.com/jakub-stastny/ox-org-in-json][my ox-org-in-json exporter]] for Emacs and then consume them in JSON on my [[https://github.com/jakub-stastny/blog][blog engine]] Elm frontend.
 
 * Rationale
 
