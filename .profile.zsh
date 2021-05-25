@@ -11,5 +11,5 @@ mkpost() {
   touch "posts/$(date +%y-%m-%d)-$1/$1.org"
   echo "posts/$(date +%y-%m-%d)-$1/$1.org"
 }
-
+        
 report-custom-functions
